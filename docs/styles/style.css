@@ -165,6 +165,14 @@ h1, .title-container {
   display: inline;
 }
 
+.med-w-del-container {
+  display: inline;
+}
+
+.med-w-block-container {
+  display: inline;
+}
+
 @media only screen and (max-width: 810px) {
   .media-container {
     width:92.5%;
@@ -196,6 +204,24 @@ h1, .title-container {
   }
 
   .min-w-block-container {
+    display: block;
+  }
+
+  .med-w-del-container {
+    display: none;
+  }
+
+  .med-w-block-container {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 810px) and (max-width: 850px) {
+  .med-w-del-container {
+    display: none;
+  }
+
+  .med-w-block-container {
     display: block;
   }
 }
