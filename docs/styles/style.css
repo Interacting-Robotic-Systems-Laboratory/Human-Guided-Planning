@@ -88,11 +88,140 @@ html, body {
   justify-content: center;
 }
 
+.table-container {
+  border-spacing: 0.25em;
+  border-collapse: separate;
+  width: 60%;
+}
+
+td {
+  padding: 0 0.5em;
+}
+
 p {
   text-align: justify;
-  width: 30cm;
-  font-size: 1.25em;
+  width: 75%;
+  font-size: 1em;
   line-height: 1.5;
+}
+
+h1, .title-container {
+  font-family: 'Zilla Slab', serif;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.section-heading {
+  font-family: 'Zilla Slab', serif;
+  font-weight: 500;
+  font-size: 1.5em;
+  color: var(--sbu-red);
+}
+
+.serif-content {
+  font-family: 'Zilla Slab', serif;
+  font-weight: 400;
+}
+
+.sans-serif-content {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.media-container {
+  width:42.5%;
+  min-width: 750px;
+}
+
+.irsl-horz-text-logo-max-w {
+  margin-top: 10px;
+  margin-bottom: auto;
+  flex-basis: min-content;
+}
+
+.irsl-horz-text-logo-new-line {
+  margin-top: 10px;
+  margin-bottom: auto;
+}
+
+.irsl-vert-text-logo {
+  margin-top: 10px;
+  margin-bottom: auto;
+}
+
+.min-w-del-container {
+  display: table-cell;
+}
+
+.min-w-add-container {
+  display: none;
+}
+
+.min-w-del-container {
+  display: inline;
+}
+
+.min-w-block-container {
+  display: inline;
+}
+
+@media only screen and (max-width: 810px) {
+  .media-container {
+    width:92.5%;
+    min-width: 0;
+  }
+
+  .irsl-horz-text-logo-max-w {
+    display: none;
+  }
+
+  .irsl-horz-text-logo-new-line {
+    display: none;
+  }
+
+  .irsl-vert-text-logo {
+    display: block;
+  }
+
+  .min-w-del-container {
+    display: none;
+  }
+
+  .min-w-add-container {
+    display: table-cell;
+  }
+
+  .min-w-del-container {
+    display: none;
+  }
+
+  .min-w-block-container {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 810px) and (max-width: 1250px) {
+  .irsl-horz-text-logo-max-w {
+    display: none;
+  }
+
+  .irsl-horz-text-logo-new-line {
+    display: block;
+  }
+
+  .irsl-vert-text-logo {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .irsl-horz-text-logo-new-line {
+    display: none;
+  }
+
+  .irsl-vert-text-logo {
+    display: none;
+  }
 }
 
 :root {
