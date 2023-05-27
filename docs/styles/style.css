@@ -80,6 +80,16 @@ html, body {
   margin: 1em;
 }
 
+.iframe-container {
+  width: 100%;
+  padding-top: 0px;
+}
+
+.responsive-iframe {
+  width: 640px;
+  height: 360px;
+}
+
 .flex-container {
   display: flex;
   flex: 10%;
@@ -213,6 +223,11 @@ h1, .title-container {
 
   .med-w-block-container {
     display: block;
+  }
+
+  .responsive-iframe {
+    width: 426px;
+    height: 240px;
   }
 }
 
